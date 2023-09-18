@@ -10,8 +10,8 @@ const Navbar = dynamic(() => import('components/Shared/Navbar'), { ssr: false })
 import { store } from "@redux/store";
 
 export const metadata = {
-  title: "NHBD",
-  description: "Gestor de colonia",
+  title: "Esteban Quintana - Freelancer",
+  description: "Desarrollo de Software",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Providers store={store}>
-          <Navbar></Navbar>
           {children}
         </Providers>
       </body>
